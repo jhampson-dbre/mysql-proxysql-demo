@@ -213,10 +213,10 @@ We will use Docker to configure MySQL replication and then setup ProxySQL to off
 
 1. Open a new terminal window to test the connection to MySQL through the proxy
 
-```
-docker exec -it source /bin/bash
-mysql -h172.18.0.4 -uproxyuser -pproxypassword -P6033 --prompt='ProxyUser> '
-```
+   ```
+   docker exec -it source /bin/bash
+   mysql -h172.18.0.4 -uproxyuser -pproxypassword -P6033 --prompt='ProxyUser> '
+   ```
 
 1. Run select and update queries from the ProxyUser connection
 
